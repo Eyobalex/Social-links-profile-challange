@@ -25,3 +25,80 @@ html {
 body {
   font-family: "Inter", sans-serif;
   box-sizing: border-box; }
+
+.container {
+  width: var(--width-desktop);
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 835px) {
+    .container {
+      width: 130rem; } }
+  @media only screen and (max-width: 520px) {
+    .container {
+      width: 100rem; } }
+  @media only screen and (max-width: 400px) {
+    .container {
+      width: 80rem; } }
+  @media only screen and (max-width: 365px) {
+    .container {
+      width: 75rem; } }
+  @media only screen and (max-width: 300px) {
+    .container {
+      width: 70rem; } }
+
+.social-card {
+  margin: 10rem 0;
+  background-color: var(--color-dark-grey);
+  padding: 2.4rem;
+  border-radius: .4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+  .social-card__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center; }
+  .social-card__avatar {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%; }
+  .social-card__user-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center; }
+  .social-card__user-name {
+    color: var(--color-white);
+    font-weight: 800; }
+  .social-card__address {
+    color: var(--color-primary);
+    font-weight: 600; }
+  .social-card__moto {
+    color: var(--color-white);
+    font-size: 1.4rem;
+    font-weight: 400; }
+  .social-card__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+  .social-card__list-item {
+    background-color: var(--color-grey);
+    padding: 1.4rem 2.4rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    .social-card__list-item:active, .social-card__list-item:hover {
+      background-color: var(--color-primary); }
+  .social-card__list-item:hover .social-card__link {
+    color: var(--color-black) !important; }
+  .social-card__link {
+    text-decoration: none;
+    color: var(--color-white); }
